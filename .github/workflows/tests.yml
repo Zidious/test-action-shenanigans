@@ -24,7 +24,7 @@ jobs:
     needs: cypress
     steps:
       - uses: actions/checkout@v3
-      - uses: ./
+      - uses: dequelabs/axe-devhub-action@e5179b2bb07a1a9af15a827bdaaa4da5ee47bf22
         with:
           api_key: ${{ secrets.AXE_WATCHER_API_KEY }}
           server_url: ${{ secrets.SERVER_URL }}
