@@ -13,5 +13,12 @@ module.exports = defineConfig(
     },
     defaultCommandTimeout: 10000,
     video: false,
+    e2e: {
+      setupNodeEvents(on) {
+        on("before:browser:launch", (_, launchOptions) => {
+          launchOptions.args.push("--headless=new");
+        });
+      },
+    },
   })
 );
