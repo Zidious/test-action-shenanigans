@@ -14,7 +14,8 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 18
-      - run: yarn && yarn test
+      - name: Run tests
+        run: xvfb-run --auto-servernum yarn && yarn test
         env:
           API_KEY: ${{ secrets.AXE_WATCHER_API_KEY }}
           SERVER_URL: ${{ secrets.SERVER_URL }}
