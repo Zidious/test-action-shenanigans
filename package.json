@@ -2,7 +2,7 @@
   "name": "test-action-shenanigans",
   "private": true,
   "scripts": {
-    "test": "cypress run --headless --browser=chrome"
+    "test": "cypress run --browser=chrome"
   },
   "devDependencies": {
     "@axe-core/watcher": "^2.4.0-next.93b7bee0",
