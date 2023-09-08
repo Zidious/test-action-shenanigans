@@ -28,3 +28,4 @@ jobs:
         with:
           api_key: ${{ secrets.AXE_WATCHER_API_KEY }}
           server_url: ${{ secrets.SERVER_URL }}
+          enable_a11y_threshold: "true"
