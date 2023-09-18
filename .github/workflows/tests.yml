@@ -14,7 +14,7 @@ jobs:
       - uses: actions/checkout@v3
       - uses: dequelabs/axe-api-team-public/.github/actions/create-project-issue-v1@148f5d08522700d82ec75e546f54bb77b23150b5
         with:
-          github-token: ${{ github.token }}
+          github_token: ${{ github.token }}
           title: 'I am a new issue, hazaar!'
           body: 'I am new issue body, also hazaar!'
           project_id: 1
