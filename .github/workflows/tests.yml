@@ -1,6 +1,7 @@
 name: Tests
 
-on: push
+on:
+  workflow_dispatch
 
 jobs:
   shellcheck:
@@ -11,11 +12,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
+      - uses: dequelabs/axe-api-team-public/.github/actions/create-project-issue-v1@148f5d08522700d82ec75e546f54bb77b23150b5
         with:
-          node-version: 18
-      - name: test
-        run: echo $GITHUB_REPOSITORY
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          title: 'I am a new issue, hazaar!'
+          body: 'I am new issue body, also hazaar!'
+          
+          
           
   #     - name: Run tests
   #       run: xvfb-run --auto-servernum yarn && yarn test
