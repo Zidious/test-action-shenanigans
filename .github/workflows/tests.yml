@@ -12,7 +12,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - uses: dequelabs/axe-api-team-public/.github/actions/create-project-issue-v1@53b70c9e8cd10d395b4de0173144a6451d3cf7cc
+      - uses: dequelabs/axe-api-team-public/.github/actions/create-project-issue-v1@cf9403f54ac012833fffa99f24fd3aaa11eebb1d
         with:
           github_token: ${{ secrets.PAT }}
           title: 'I am a new issue, hazaar!'
