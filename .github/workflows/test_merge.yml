@@ -3,6 +3,7 @@ name: test merge
 on:
   pull_request:
     branches: master
+    types: closed
 
 jobs:
   if_merged:
